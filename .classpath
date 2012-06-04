@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/ebean.jar"/>
+	<classpathentry kind="lib" path="lib/hibernate-jpa-2.0-api.jar"/>
+	<classpathentry kind="lib" path="lib/junit.jar"/>
+	<classpathentry kind="lib" path="lib/fest-util.jar"/>
+	<classpathentry kind="lib" path="lib/fest-assert.jar"/>
+	<classpathentry kind="lib" path="lib/h2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
