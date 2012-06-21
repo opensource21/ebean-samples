@@ -4,6 +4,7 @@ package models.psec;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -33,7 +34,7 @@ public class PsecRole {
     @Temporal(TemporalType.TIMESTAMP)
     private Date lastUpdate;
 
-    @ManyToMany(fetch=FetchType.EAGER)
+    @ManyToMany(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
     private List<PsecPermission> psecPermissions;
 
     private boolean defaultRole = false;
