@@ -127,9 +127,5 @@ public class EbeanInitDBHelperTest {
         assertThat(role.getPsecPermissions()).hasSize(permNames.length);
     }
 
-    @Test
-    public void testCreateOrUpdateUser() {
-        Assert.fail("Not yet implemented");
-    }
 
 }
