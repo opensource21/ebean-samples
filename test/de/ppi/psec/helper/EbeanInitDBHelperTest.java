@@ -6,8 +6,6 @@ import static org.fest.assertions.Assertions.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import junit.framework.Assert;
-
 import models.psec.PsecPermission;
 import models.psec.PsecRole;
 import models.psec.PsecUser;
@@ -127,9 +125,5 @@ public class EbeanInitDBHelperTest {
         assertThat(role.getPsecPermissions()).hasSize(permNames.length);
     }
 
-    @Test
-    public void testCreateOrUpdateUser() {
-        Assert.fail("Not yet implemented");
-    }
 
 }

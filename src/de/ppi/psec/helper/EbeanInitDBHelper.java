@@ -78,11 +78,7 @@ public class EbeanInitDBHelper {
         if (!result.getAutoUpdatesForbidden()) {
             final List<PsecPermission> permissionObjects = server.find(PsecPermission.class).
                     where().in("name", (Object[])permissions).findList();
-            for (PsecPermission psecPermission : permissionObjects) {
-                result.getPsecPermissions().add(server.getReference(
-                        PsecPermission.class, psecPermission.getId()));
-            }
-            //result.setPsecPermissions(permissionObjects);
+            result.getPsecPermissions().addAll(permissionObjects);
             result.setDefaultRole(defaultRole);
         } else {
             System.out.println("Can't update Role " + name);
